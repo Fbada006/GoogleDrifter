@@ -1,4 +1,6 @@
 # GoogleDrifter
+![Android CI](https://github.com/Fbada006/GoogleDrifter/workflows/Android%20CI/badge.svg?branch=master)
+
 ## Android Mobile Developer Technical Assessment
 Hi and welcome to the Workfleek Software Engineer (Android) challenge. Here is the
 chance for you to convince us that you are the right person for the job!
