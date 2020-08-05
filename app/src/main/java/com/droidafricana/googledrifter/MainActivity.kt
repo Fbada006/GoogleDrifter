@@ -91,6 +91,8 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
 
     override fun onMapReady(googleMap: GoogleMap) {
         this.map = googleMap
+        map.mapType = GoogleMap.MAP_TYPE_SATELLITE
+
         enableLocationWithPermissionCheck()
 
         viewModel.locationData.observe(this, Observer {
