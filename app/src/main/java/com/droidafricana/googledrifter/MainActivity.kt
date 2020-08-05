@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
 
     private lateinit var map: GoogleMap
 
-    private val viewModel by viewModels<CurrentLocationViewModel>()
+    private val viewModel: CurrentLocationViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

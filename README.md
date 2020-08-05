@@ -37,3 +37,7 @@ description not the Geocoding value.
 ● User can move and click on the map, and the marker will move to the point as the
 user clicks - popup the address description when the user pins a point on the
 map.
+
+## Note
+
+For obvious security reasons, I have restricted the maps API key to the debug version of my app only.

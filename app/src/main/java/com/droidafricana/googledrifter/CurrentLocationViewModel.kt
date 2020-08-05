@@ -9,7 +9,8 @@ import com.google.android.gms.maps.model.MarkerOptions
 import java.io.IOException
 import java.util.Locale
 
-class CurrentLocationViewModel(application: Application) : AndroidViewModel(application) {
+class CurrentLocationViewModel(application: Application) :
+    AndroidViewModel(application) {
 
     private val context = application.applicationContext
 
