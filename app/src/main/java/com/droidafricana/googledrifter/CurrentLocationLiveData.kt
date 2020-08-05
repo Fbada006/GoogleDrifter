@@ -1,7 +1,7 @@
 package com.droidafricana.googledrifter
 
 import android.annotation.SuppressLint
-import android.content.Context
+import android.app.Application
 import android.location.Location
 import androidx.lifecycle.LiveData
 import com.droidafricana.googledrifter.model.DrifterLocation
@@ -11,9 +11,10 @@ import com.google.android.gms.location.LocationRequest
 import com.google.android.gms.location.LocationResult
 import com.google.android.gms.location.LocationServices
 
-class CurrentLocationLiveData(context: Context) : LiveData<DrifterLocation>() {
+class CurrentLocationLiveData(application: Application) : LiveData<DrifterLocation>() {
 
-    private var fusedLocationClient = LocationServices.getFusedLocationProviderClient(context)
+    private var fusedLocationClient =
+        LocationServices.getFusedLocationProviderClient(application)
 
     private val locationRequest: LocationRequest = LocationRequest.create().apply {
         interval = Constants.LOCATION_UPDATE_INTERVAL
