@@ -18,7 +18,7 @@ class CurrentLocationViewModel(application: Application) : AndroidViewModel(appl
     val locationData: CurrentLocationLiveData
         get() = _locationData
 
-    private fun setMapLongClick(map: GoogleMap) {
+    fun setMapLongClick(map: GoogleMap) {
         map.setOnMapLongClickListener { latLng ->
             map.addMarker(
                 MarkerOptions().position(latLng)
@@ -28,7 +28,7 @@ class CurrentLocationViewModel(application: Application) : AndroidViewModel(appl
         }
     }
 
-    private fun setPoiClick(map: GoogleMap) {
+    fun setPoiClick(map: GoogleMap) {
         map.setOnPoiClickListener { poi ->
             map.addMarker(
                 MarkerOptions()
@@ -42,8 +42,8 @@ class CurrentLocationViewModel(application: Application) : AndroidViewModel(appl
         return try {
             val myLocation = Geocoder(context, Locale.getDefault())
             val addressList = myLocation.getFromLocation(latitude, longitude, 1)
-            val address = addressList.getOrNull(0)
-            val addressStr = address?.getAddressLine(0)
+            val address = addressList[0]
+            val addressStr = address.getAddressLine(0)
             addressStr
         } catch (e: IOException) {
             e.printStackTrace()

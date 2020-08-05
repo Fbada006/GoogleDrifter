@@ -91,7 +91,6 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
 
     override fun onMapReady(googleMap: GoogleMap) {
         this.map = googleMap
-        map.mapType = GoogleMap.MAP_TYPE_SATELLITE
         enableLocationWithPermissionCheck()
 
         viewModel.locationData.observe(this, Observer {
@@ -99,5 +98,8 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
             map.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, Constants.MAP_ZOOM))
             map.addMarker(MarkerOptions().position(latLng))
         })
+
+        viewModel.setMapLongClick(map)
+        viewModel.setPoiClick(map)
     }
 }
