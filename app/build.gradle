@@ -23,6 +23,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
@@ -35,6 +39,12 @@ dependencies {
     //permissions
     implementation "org.permissionsdispatcher:permissionsdispatcher:$permissionsdispatcher_version"
     kapt "org.permissionsdispatcher:permissionsdispatcher-processor:$permissionsdispatcher_version"
+
+    //Lifecycle
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
+
+    //Location
+    implementation "com.google.android.gms:play-services-location:$location_version"
 
     //testing
     testImplementation "junit:junit:$junit_version"

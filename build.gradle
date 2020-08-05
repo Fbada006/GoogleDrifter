@@ -9,6 +9,8 @@ buildscript {
         ext_junit_version = "1.1.1"
         espresso_version = "3.2.0"
         permissionsdispatcher_version = "4.7.0"
+        lifecycle_version = "2.2.0"
+        location_version = "17.0.0"
     }
 
     repositories {

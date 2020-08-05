@@ -3,6 +3,7 @@ package com.droidafricana.googledrifter
 import android.Manifest
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.droidafricana.googledrifter.databinding.ActivityMainBinding
 import com.droidafricana.googledrifter.utils.showDialog
 import com.droidafricana.googledrifter.utils.toast
 import permissions.dispatcher.NeedsPermission
@@ -14,9 +15,13 @@ import permissions.dispatcher.RuntimePermissions
 
 @RuntimePermissions
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         getLocationWithPermissionCheck()
     }
 
