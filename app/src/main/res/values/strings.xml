@@ -4,4 +4,5 @@
     <string name="location_permission_rationale">We need the location permission to get your current location. Without the permission, the app will not work.</string>
     <string name="location_permission_denied_message">Location permission denied</string>
     <string name="location_permission_never_ask_message">Thank you. We will never ask for location permissions again. Please note that the app may not work as expected</string>
+    <string name="unknown_place">Unknown</string>
 </resources>
