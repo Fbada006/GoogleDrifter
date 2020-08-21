@@ -1,27 +1,7 @@
 # GoogleDrifter
 ![Android CI](https://github.com/Fbada006/GoogleDrifter/workflows/Android%20CI/badge.svg?branch=master)
 
-## Android Mobile Developer Technical Assessment
-Hi and welcome to the Workfleek Software Engineer (Android) challenge. Here is the
-chance for you to convince us that you are the right person for the job!
-We wish you good luck!
-
-## Information
-● You have 48hrs to complete this challenge from the moment it is received.
-
-● All code written should be pushed to a private version control repository, please
-send us an invite to collaborate at codetest@workfleek.co.ke.
-
-● Feel free to use Libraries or Frameworks that you usually work with. We expect
-that you complete the Android Code Challenge with Kotlin.
-
-● After Completing the challenge push all changes to the repository, Compile an
-executable APK and send us a link to the repository with the Apk through
-codetest@workfleek.co.ke
-
-● Take your time, do your best and good luck!
-
-HINT: We usually work with MVVM and RxKotlin.
+An android app that shows the user's location using the MVVM design pattern using Google Maps SDK
 
 ## Background
 
