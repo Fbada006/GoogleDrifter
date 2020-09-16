@@ -50,7 +50,7 @@ dependencies {
 
     //permissions
     implementation(Libraries.permisionsDispatcher)
-    implementation(Libraries.permisionsDispatcherKapt)
+    kapt(Libraries.permisionsDispatcherKapt)
 
     //Lifecycle
     implementation(Libraries.lifecycle)
