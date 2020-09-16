@@ -22,7 +22,6 @@ object AndroidSdk {
 
 object Libraries {
     private object Versions {
-        const val kotlin_version = "1.3.72"
         const val core_ktx_version = "1.3.1"
         const val appcompat_version = "1.1.0"
         const val constraintlayout_version = "1.1.3"
